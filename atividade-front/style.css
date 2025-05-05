@@ -1,0 +1,149 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(bg-lol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;   
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: #D9B959;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #0d0d0d;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+input,button{
+    width: 100%;
+    pad: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input{
+    border: 1px solid #0d0d0d;
+}
+
+button{
+    background-color: #0554F2;
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #66F2F2;
+}
+
+.botao-cadastro-inicial{
+    height: 50px;
+}
+
+.link-pacientes{
+    margin-top: 25px;
+    text-decoration: none;
+    color: #5872A6;
+    font-size: 14px;
+}
+
+.link-pacientes:hover{
+    text-decoration: underline;
+}
+
+.mensagem{
+    position: fixed;
+    top: 20px;
+    right: -30px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #D9B959;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease-in-out opacity 0.5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 300px;
+    z-index: 1000;
+}
+
+.mensagem.sucesso{
+    background-color: #0554F2;
+}
+
+.mensagem.visivel{
+    right: 20px;
+    opacity: 1;
+}
+
+.oculto{
+    display: none;
+}
+
+.link-voltar{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #5872A6;
+    font-size: 14px;
+    text-align: center;
+}
+
+.link-voltar:hover{
+    text-decoration: underline;
+}
+
+.link-voltar-pagina-inicial{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #5872A6;
+    font-size: 14px;
+    text-align: center;
+}
+
+.link-voltar-pagina-inicial:hover{
+    text-decoration: line-through;
+}
