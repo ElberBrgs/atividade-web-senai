@@ -22,4 +22,11 @@ public class GlobalExceptionHandler {
                 .status(HttpStatus.BAD_REQUEST)
                 .body(Map.of("mensagem", erro.getFieldErrors().get(0).getDefaultMessage()));
     }
+
+    @ExceptionHandler(EmailJaCadastradoException.class)
+    public ResponseEntity<Map<String, Object>> handlerEmailJaCadastrado(EmailJaCadastradoException erro) {
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .body(Map.of("mensagem", erro.getMessage()));
+    }
 }
