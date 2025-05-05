@@ -1,0 +1,119 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(bg-albion.jpg);
+    background-repeat: no-repeat;
+    background-size: center;   
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: #f2a25c;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #0d0d0d;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+input,button{
+    width: 100%;
+    pad: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input{
+    border: 1px solid #d97b29;
+}
+
+button{
+    background-color: #d92b5a;
+    color: #d97b29;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #f22e3e;
+}
+
+.link-pacientes{
+    margin-top: 25px;
+    text-decoration: none;
+    color: #f22e3e;
+    font-size: 14px;
+}
+
+.link-pacientes:hover{
+    text-decoration: none;
+}
+
+.mensagem{
+    position: fixed;
+    top: 20px;
+    right: -30px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #d97b29;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease-in-out opacity 0.5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 300px;
+    z-index: 1000;
+}
+
+.mensagem.sucesso{
+    background-color: #f22e3e;
+}
+
+.mensagem.visivel{
+    right: 20px;
+    opacity: 1;
+}
+
+.oculto{
+    display: none;
+}
